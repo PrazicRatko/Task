@@ -10,10 +10,10 @@ The application is doing simple UART task.
 
 ##Prerequisites
 
--GNU ARM Embedded Toolchain: [download and installation guide](https://launchpad.net/~terry.guo/+archive/ubuntu/gcc-arm-embedded)
+- GNU ARM Embedded Toolchain: [download and installation guide](https://launchpad.net/~terry.guo/+archive/ubuntu/gcc-arm-embedded)
 
 
--Qemu with an STM32 microcontroller implementation: [download and installation guide](https://github.com/beckus/qemu_stm32)
+- Qemu with an STM32 microcontroller implementation: [download and installation guide](https://github.com/beckus/qemu_stm32)
 
 ##Build
 
