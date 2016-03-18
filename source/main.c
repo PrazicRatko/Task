@@ -179,7 +179,7 @@ static void prvTask( void *pvParameters )
 					byte_LSB&=1;
 					if ( byte_GPIO>=0 && byte_GPIO<=15 )
 					{
-						GPIO_WriteBit(GPIOB, 1<<byte_GPIO , byte_LSB);   
+						GPIO_WriteBit(GPIOC, 1<<byte_GPIO , byte_LSB);   
 					}
 					
 				}
