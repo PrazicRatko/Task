@@ -21,15 +21,20 @@ Compile every source file with next command:
 `$ arm-none-eabi-gcc -Wall -mcpu=cortex-m3 -mlittle-endian -mthumb -I *path_to_the_header_files*/include -D STM32F10x -Os -c *source_file_name*.c -o *source_file_name*.o`
 
 Link all .o files with next command:
+
+
 `$ arm-none-eabi-gcc -mcpu=cortex-m3 -mlittle-endian -mthumb -D STM32F10x -T *path_to_the_linker_script*/stm32.ld -Wl,--gc-sections *list_all_.o_files* -o stm32_application.elf`
 
 Convert ELF binary into binary format:
+
+
 `$ arm-none-eabi-objcopy -O binary stm32_application.elf stm32_application.bin`
 
 
 ##Run
 
 To run the target image in Qemu, enter the following command:
+
 
 `*path_to_the_installation_file*/qemu-system-arm -machine stm32-p103 -nographic -m 513M -kernel stm32_application.bin`
 
