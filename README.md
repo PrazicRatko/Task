@@ -16,6 +16,8 @@ The application is doing simple UART task.
 ##Build
 
 Compile every source file with next command:
+
+
 `$ arm-none-eabi-gcc -Wall -mcpu=cortex-m3 -mlittle-endian -mthumb -I *path_to_the_header_files*/include -D STM32F10x -Os -c *source_file_name*.c -o *source_file_name*.o`
 
 Link all .o files with next command:
