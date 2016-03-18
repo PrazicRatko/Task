@@ -10,17 +10,17 @@ The application is doing simple UART task.
 
 ##Prerequisites
 
-*GNU ARM Embedded Toolchain: [download and installation guide](https://launchpad.net/~terry.guo/+archive/ubuntu/gcc-arm-embedded)
+-GNU ARM Embedded Toolchain: [download and installation guide](https://launchpad.net/~terry.guo/+archive/ubuntu/gcc-arm-embedded)
 
 
-*Qemu with an STM32 microcontroller implementation: [download and installation guide](https://github.com/beckus/qemu_stm32)
+-Qemu with an STM32 microcontroller implementation: [download and installation guide](https://github.com/beckus/qemu_stm32)
 
 ##Build
 
 Compile every source file with next command:
 
 
-`$ arm-none-eabi-gcc -Wall -mcpu=cortex-m3 -mlittle-endian -mthumb -I path_to_the_header_files/include -D STM32F10x -Os -c *source_file_name*.c -o source_file_name.o`
+`$ arm-none-eabi-gcc -Wall -mcpu=cortex-m3 -mlittle-endian -mthumb -I path_to_the_header_files/include -D STM32F10x -Os -c source_file_name.c -o source_file_name.o`
 
 Link all .o files with next command:
 
